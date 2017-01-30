@@ -41,5 +41,6 @@ mainClassName = 'com.capstone08.springstudy.AppConfig'
 test {
     testLogging {
         events "passed", "failed"
+        exceptionFormat = 'full'
     }
 }
