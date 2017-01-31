@@ -24,7 +24,7 @@
             </td>
             <td class="homeSubject">
                 <a th:href="@{'/postview/' + ${post.id}}">
-                    <p th:text="${post.subject}">null</p>
+                    <p th:text="${post.subject}" class="subjectBtn">null</p>
                 </a>
             </td>
             <td class="homeNick">
@@ -40,8 +40,8 @@
     </div>
     </tbody>
 </table>
-<a th:href="@{'/write'}" class="writeBtn">
-    <input type="button" value="글쓰기"/>
+<a th:href="@{'/write'}">
+    <input type="button" value="글쓰기" class="writeBtn"/>
 </a>
 </body>
 </html>
