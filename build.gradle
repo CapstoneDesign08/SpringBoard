@@ -36,7 +36,7 @@ dependencies {
     testCompile('junit:junit:4.12')
 }
 
-mainClassName = 'com.capstone08.springstudy.AppConfig'
+mainClassName = 'com.board.AppConfig'
 
 test {
     testLogging {

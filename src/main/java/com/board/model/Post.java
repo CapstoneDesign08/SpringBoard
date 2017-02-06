@@ -15,4 +15,12 @@ public class Post {
     private String content;     // 내용
     private String date;          // 날짜
     private int hit;            // 조회
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 }
