@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.board.PostViewTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-02-06T05:01:26" hostname="chan-ThinkPad-T440" time="4.506">
+  <properties/>
+  <testcase name="postViewBackTest" classname="com.board.PostViewTest" time="0.712"/>
+  <testcase name="deletePostTest" classname="com.board.PostViewTest" time="1.051"/>
+  <testcase name="moveToModifyTest" classname="com.board.PostViewTest" time="0.761"/>
+  <testcase name="postViewTest" classname="com.board.PostViewTest" time="1.105"/>
+  <testcase name="postViewHitTest" classname="com.board.PostViewTest" time="0.873"/>
+  <system-out><![CDATA[2017-02-06 14:01:26.570  INFO 10200 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.board.PostViewTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-02-06 14:01:26.575  INFO 10200 --- [    Test worker] WebAppIntegrationTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-02-06 14:01:26.576  INFO 10200 --- [    Test worker] WebAppIntegrationTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@48025c8b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4345add4, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1c94d53d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1e8c3926, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4430c878, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2a75f627, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@10f2e369, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6f48ad58, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2d79cbc1, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@28b8d487, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2fd68352, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@55ec99d]
+/home/chan/SpringBoard
+2017-02-06 14:01:26.585  INFO 10200 --- [    Test worker] o.o.s.phantomjs.PhantomJSDriverService   : executable: /home/chan/SpringBoard/src/test/resources/phantomjs-2.1.1-linux-x86_64/bin/phantomjs
+2017-02-06 14:01:26.586  INFO 10200 --- [    Test worker] o.o.s.phantomjs.PhantomJSDriverService   : port: 26119
+2017-02-06 14:01:26.586  INFO 10200 --- [    Test worker] o.o.s.phantomjs.PhantomJSDriverService   : arguments: [--webdriver=26119, --webdriver-logfile=/home/chan/SpringBoard/phantomjsdriver.log]
+2017-02-06 14:01:26.586  INFO 10200 --- [    Test worker] o.o.s.phantomjs.PhantomJSDriverService   : environment: {}
+Hibernate: select post0_.id as id1_0_, post0_.content as content2_0_, post0_.date as date3_0_, post0_.hit as hit4_0_, post0_.nick as nick5_0_, post0_.subject as subject6_0_ from post post0_ where post0_.id=?
+Hibernate: update post set content=?, date=?, hit=?, nick=?, subject=? where id=?
+Hibernate: select post0_.id as id1_0_, post0_.content as content2_0_, post0_.date as date3_0_, post0_.hit as hit4_0_, post0_.nick as nick5_0_, post0_.subject as subject6_0_ from post post0_ order by post0_.id desc
+/home/chan/SpringBoard
+2017-02-06 14:01:27.296  INFO 10200 --- [    Test worker] o.o.s.phantomjs.PhantomJSDriverService   : executable: /home/chan/SpringBoard/src/test/resources/phantomjs-2.1.1-linux-x86_64/bin/phantomjs
+2017-02-06 14:01:27.296  INFO 10200 --- [    Test worker] o.o.s.phantomjs.PhantomJSDriverService   : port: 17467
+2017-02-06 14:01:27.296  INFO 10200 --- [    Test worker] o.o.s.phantomjs.PhantomJSDriverService   : arguments: [--webdriver=17467, --webdriver-logfile=/home/chan/SpringBoard/phantomjsdriver.log]
+2017-02-06 14:01:27.296  INFO 10200 --- [    Test worker] o.o.s.phantomjs.PhantomJSDriverService   : environment: {}
+Hibernate: select post0_.id as id1_0_, post0_.content as content2_0_, post0_.date as date3_0_, post0_.hit as hit4_0_, post0_.nick as nick5_0_, post0_.subject as subject6_0_ from post post0_ order by post0_.id desc
+Hibernate: select post0_.id as id1_0_, post0_.content as content2_0_, post0_.date as date3_0_, post0_.hit as hit4_0_, post0_.nick as nick5_0_, post0_.subject as subject6_0_ from post post0_ where post0_.id=?
+Hibernate: update post set content=?, date=?, hit=?, nick=?, subject=? where id=?
+/home/chan/SpringBoard
+2017-02-06 14:01:28.348  INFO 10200 --- [    Test worker] o.o.s.phantomjs.PhantomJSDriverService   : executable: /home/chan/SpringBoard/src/test/resources/phantomjs-2.1.1-linux-x86_64/bin/phantomjs
+2017-02-06 14:01:28.348  INFO 10200 --- [    Test worker] o.o.s.phantomjs.PhantomJSDriverService   : port: 23677
+2017-02-06 14:01:28.348  INFO 10200 --- [    Test worker] o.o.s.phantomjs.PhantomJSDriverService   : arguments: [--webdriver=23677, --webdriver-logfile=/home/chan/SpringBoard/phantomjsdriver.log]
+2017-02-06 14:01:28.349  INFO 10200 --- [    Test worker] o.o.s.phantomjs.PhantomJSDriverService   : environment: {}
+Hibernate: select post0_.id as id1_0_, post0_.content as content2_0_, post0_.date as date3_0_, post0_.hit as hit4_0_, post0_.nick as nick5_0_, post0_.subject as subject6_0_ from post post0_ where post0_.id=?
+Hibernate: update post set content=?, date=?, hit=?, nick=?, subject=? where id=?
+/home/chan/SpringBoard
+2017-02-06 14:01:29.109  INFO 10200 --- [    Test worker] o.o.s.phantomjs.PhantomJSDriverService   : executable: /home/chan/SpringBoard/src/test/resources/phantomjs-2.1.1-linux-x86_64/bin/phantomjs
+2017-02-06 14:01:29.109  INFO 10200 --- [    Test worker] o.o.s.phantomjs.PhantomJSDriverService   : port: 19650
+2017-02-06 14:01:29.109  INFO 10200 --- [    Test worker] o.o.s.phantomjs.PhantomJSDriverService   : arguments: [--webdriver=19650, --webdriver-logfile=/home/chan/SpringBoard/phantomjsdriver.log]
+2017-02-06 14:01:29.109  INFO 10200 --- [    Test worker] o.o.s.phantomjs.PhantomJSDriverService   : environment: {}
+Hibernate: select post0_.id as id1_0_, post0_.content as content2_0_, post0_.date as date3_0_, post0_.hit as hit4_0_, post0_.nick as nick5_0_, post0_.subject as subject6_0_ from post post0_ where post0_.id=?
+Hibernate: update post set content=?, date=?, hit=?, nick=?, subject=? where id=?
+/home/chan/SpringBoard
+2017-02-06 14:01:30.217  INFO 10200 --- [    Test worker] o.o.s.phantomjs.PhantomJSDriverService   : executable: /home/chan/SpringBoard/src/test/resources/phantomjs-2.1.1-linux-x86_64/bin/phantomjs
+2017-02-06 14:01:30.217  INFO 10200 --- [    Test worker] o.o.s.phantomjs.PhantomJSDriverService   : port: 11198
+2017-02-06 14:01:30.217  INFO 10200 --- [    Test worker] o.o.s.phantomjs.PhantomJSDriverService   : arguments: [--webdriver=11198, --webdriver-logfile=/home/chan/SpringBoard/phantomjsdriver.log]
+2017-02-06 14:01:30.217  INFO 10200 --- [    Test worker] o.o.s.phantomjs.PhantomJSDriverService   : environment: {}
+Hibernate: select post0_.id as id1_0_, post0_.content as content2_0_, post0_.date as date3_0_, post0_.hit as hit4_0_, post0_.nick as nick5_0_, post0_.subject as subject6_0_ from post post0_ order by post0_.id desc
+Hibernate: select post0_.id as id1_0_, post0_.content as content2_0_, post0_.date as date3_0_, post0_.hit as hit4_0_, post0_.nick as nick5_0_, post0_.subject as subject6_0_ from post post0_ where post0_.id=?
+Hibernate: update post set content=?, date=?, hit=?, nick=?, subject=? where id=?
+]]></system-out>
+  <system-err><![CDATA[[INFO  - 2017-02-06T05:01:26.671Z] GhostDriver - Main - running on port 26119
+[INFO  - 2017-02-06T05:01:26.750Z] Session [505d12b0-ec29-11e6-82a7-e9899aed9a5a] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-02-06T05:01:26.750Z] Session [505d12b0-ec29-11e6-82a7-e9899aed9a5a] - page.customHeaders:  - {}
+[INFO  - 2017-02-06T05:01:26.750Z] Session [505d12b0-ec29-11e6-82a7-e9899aed9a5a] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-02-06T05:01:26.751Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 505d12b0-ec29-11e6-82a7-e9899aed9a5a
+[INFO  - 2017-02-06T05:01:27.274Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-02-06T05:01:27.375Z] GhostDriver - Main - running on port 17467
+[INFO  - 2017-02-06T05:01:27.470Z] Session [50ca7a80-ec29-11e6-a765-69962f1782dc] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-02-06T05:01:27.470Z] Session [50ca7a80-ec29-11e6-a765-69962f1782dc] - page.customHeaders:  - {}
+[INFO  - 2017-02-06T05:01:27.470Z] Session [50ca7a80-ec29-11e6-a765-69962f1782dc] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-02-06T05:01:27.471Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 50ca7a80-ec29-11e6-a765-69962f1782dc
+[INFO  - 2017-02-06T05:01:28.325Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-02-06T05:01:28.430Z] GhostDriver - Main - running on port 23677
+[INFO  - 2017-02-06T05:01:28.516Z] Session [516a15e0-ec29-11e6-bca9-f1ba98b87a2d] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-02-06T05:01:28.516Z] Session [516a15e0-ec29-11e6-bca9-f1ba98b87a2d] - page.customHeaders:  - {}
+[INFO  - 2017-02-06T05:01:28.516Z] Session [516a15e0-ec29-11e6-bca9-f1ba98b87a2d] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-02-06T05:01:28.516Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 516a15e0-ec29-11e6-bca9-f1ba98b87a2d
+[INFO  - 2017-02-06T05:01:29.087Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-02-06T05:01:29.187Z] GhostDriver - Main - running on port 19650
+[INFO  - 2017-02-06T05:01:29.277Z] Session [51de3470-ec29-11e6-9faf-0523a37cac65] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-02-06T05:01:29.277Z] Session [51de3470-ec29-11e6-9faf-0523a37cac65] - page.customHeaders:  - {}
+[INFO  - 2017-02-06T05:01:29.277Z] Session [51de3470-ec29-11e6-9faf-0523a37cac65] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-02-06T05:01:29.278Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 51de3470-ec29-11e6-9faf-0523a37cac65
+[INFO  - 2017-02-06T05:01:30.193Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-02-06T05:01:30.297Z] GhostDriver - Main - running on port 11198
+[INFO  - 2017-02-06T05:01:30.382Z] Session [5286d080-ec29-11e6-9df4-abefa2932c15] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-02-06T05:01:30.382Z] Session [5286d080-ec29-11e6-9df4-abefa2932c15] - page.customHeaders:  - {}
+[INFO  - 2017-02-06T05:01:30.382Z] Session [5286d080-ec29-11e6-9df4-abefa2932c15] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-02-06T05:01:30.382Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 5286d080-ec29-11e6-9df4-abefa2932c15
+[INFO  - 2017-02-06T05:01:31.066Z] ShutdownReqHand - _handle - About to shutdown
+]]></system-err>
+</testsuite>
