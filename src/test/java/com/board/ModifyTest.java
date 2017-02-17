@@ -9,13 +9,16 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.boot.test.WebIntegrationTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
 
@@ -23,7 +26,11 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = AppConfig.class)
+@WebIntegrationTest(randomPort = true)
 public class ModifyTest {
+
+    @Value("${local.server.port}")
+    private int port;
 
     static WebDriver driver;
 
@@ -46,8 +53,13 @@ public class ModifyTest {
         username = pro.getProperty("spring.datasource.username");
         password = pro.getProperty("spring.datasource.password");
 
-        conn = DriverManager.getConnection(connectionURL, username, password);
-        stmt = conn.createStatement();
+        try {
+            conn = DriverManager.getConnection(connectionURL, username, password);
+            stmt = conn.createStatement();
+        }
+        catch (SQLException e) {
+            throw new SQLException("$DB가 연결 되지 않았습니다.$");
+        }
 
         Capabilities caps = new DesiredCapabilities();
         ((DesiredCapabilities) caps).setJavascriptEnabled(true);
@@ -74,18 +86,18 @@ public class ModifyTest {
             query = "Insert Into post(id, nick ,subject, content, date, hit) VALUES (2, 'TEST', 'TESTSUBJECT', 'TESTCONTENT', '2017/01/16', 2);";
             stmt.executeUpdate(query);
 
-            String baseURL = "http://localhost:8080/postview/modify/2";
+            String baseURL = "http://localhost:" + port + "/postview/modify/2";
             driver.get(baseURL);
 
             WebElement td = driver.findElement(By.name("nick"));
-            assertEquals("닉네임 default 값이 일치하지 않습니다.", "TEST", td.getAttribute("value"));
+            assertEquals("$닉네임 default 값이 일치하지 않습니다.$", "TEST", td.getAttribute("value"));
             td = driver.findElement(By.name("subject"));
-            assertEquals("글 제목 default 값이 일치하지 않습니다.", "TESTSUBJECT", td.getAttribute("value"));
+            assertEquals("$글 제목 default 값이 일치하지 않습니다.$", "TESTSUBJECT", td.getAttribute("value"));
             td = driver.findElement(By.name("content"));
-            assertEquals("글 내용 default 값이 일치하지 않습니다.", "TESTCONTENT", td.getAttribute("value"));
+            assertEquals("$글 내용 default 값이 일치하지 않습니다.$", "TESTCONTENT", td.getAttribute("value"));
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("html이 제대로 호출되지 않았습니다.");
+            throw new NoSuchElementException("$html이 제대로 호출되지 않았습니다.$");
         }
         finally {
             query = "TRUNCATE TABLE post;";
@@ -100,7 +112,7 @@ public class ModifyTest {
             query = "Insert Into post(id, nick ,subject, content, date, hit) VALUES (2, 'TEST', 'TESTSUBJECT', 'TESTCONTENT', '2017/01/16', 2);";
             stmt.executeUpdate(query);
 
-            String baseURL = "http://localhost:8080/postview/modify/2";
+            String baseURL = "http://localhost:" + port + "/postview/modify/2";
             driver.get(baseURL);
 
             driver.findElement(By.name("nick")).clear();
@@ -113,13 +125,13 @@ public class ModifyTest {
             driver.findElement(By.tagName("form")).submit();
 
             WebElement td = driver.findElement(By.className("postViewId"));
-            assertEquals("수정된 글 번호가 일치하지 않습니다.", "2", td.getText());
+            assertEquals("$수정된 글 번호가 일치하지 않습니다.$", "2", td.getText());
             td = driver.findElement(By.className("postViewNick"));
-            assertEquals("수정된 닉네임이 일치하지 않습니다.", "MODIFY_NICK", td.getText());
+            assertEquals("$수정된 닉네임이 일치하지 않습니다.$", "MODIFY_NICK", td.getText());
             td = driver.findElement(By.className("postViewSubject"));
-            assertEquals("수정된 글 제목이 일치하지 않습니다.", "MODIFY_SUBJECT", td.getText());
+            assertEquals("$수정된 글 제목이 일치하지 않습니다.$", "MODIFY_SUBJECT", td.getText());
             td = driver.findElement(By.className("postViewContent"));
-            assertEquals("수정된 글 내용이 일치하지 않습니다.", "MODIFY_CONTENT", td.getText());
+            assertEquals("$수정된 글 내용이 일치하지 않습니다.$", "MODIFY_CONTENT", td.getText());
         }
         catch (NoSuchElementException e) {
             throw new NoSuchElementException("$html이 제대로 호출되지 않았습니다.$");
@@ -137,15 +149,15 @@ public class ModifyTest {
             query = "Insert Into post(id, nick ,subject, content, date, hit) VALUES (2, 'TEST', 'TESTSUBJECT', 'TESTCONTENT', '2017/01/16', 2);";
             stmt.executeUpdate(query);
 
-            String baseURL = "http://localhost:8080/postview/modify/2";
+            String baseURL = "http://localhost:" + port + "/postview/modify/2";
             driver.get(baseURL);
 
             driver.findElement(By.className("back")).click();
 
-            assertEquals("주소가 제대로 호출되지 않았습니다.", "http://localhost:8080/postview/2", driver.getCurrentUrl());
+            assertEquals("$주소가 제대로 호출되지 않았습니다.$", "http://localhost:" + port + "/postview/2", driver.getCurrentUrl());
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("html이 제대로 호출되지 않았습니다.");
+            throw new NoSuchElementException("$html이 제대로 호출되지 않았습니다.$");
         }
         finally {
             query = "TRUNCATE TABLE post;";
@@ -160,16 +172,16 @@ public class ModifyTest {
             query = "Insert Into post(id, nick ,subject, content, date, hit) VALUES (2, 'TEST', 'TESTSUBJECT', 'TESTCONTENT', '2017/01/16', 2);";
             stmt.executeUpdate(query);
 
-            String baseURL = "http://localhost:8080/postview/modify/2";
+            String baseURL = "http://localhost:" + port + "/postview/modify/2";
             driver.get(baseURL);
 
             driver.findElement(By.name("nick")).clear();
             driver.findElement(By.tagName("form")).submit();
 
-            assertEquals("에러페이지가 제대로 호출되지 않았습니다.", "Error", driver.getTitle());
+            assertEquals("$에러페이지가 제대로 호출되지 않았습니다.$", "Error", driver.getTitle());
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("html이 제대로 호출되지 않았습니다.");
+            throw new NoSuchElementException("$html이 제대로 호출되지 않았습니다.$");
         }
         finally {
             query = "TRUNCATE TABLE post;";
@@ -184,16 +196,16 @@ public class ModifyTest {
             query = "Insert Into post(id, nick ,subject, content, date, hit) VALUES (2, 'TEST', 'TESTSUBJECT', 'TESTCONTENT', '2017/01/16', 2);";
             stmt.executeUpdate(query);
 
-            String baseURL = "http://localhost:8080/postview/modify/2";
+            String baseURL = "http://localhost:" + port + "/postview/modify/2";
             driver.get(baseURL);
 
             driver.findElement(By.name("subject")).clear();
             driver.findElement(By.tagName("form")).submit();
 
-            assertEquals("에러페이지가 제대로 호출되지 않았습니다.", "Error", driver.getTitle());
+            assertEquals("$에러페이지가 제대로 호출되지 않았습니다.$", "Error", driver.getTitle());
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("html이 제대로 호출되지 않았습니다.");
+            throw new NoSuchElementException("$html이 제대로 호출되지 않았습니다.$");
         }
         finally {
             query = "TRUNCATE TABLE post;";

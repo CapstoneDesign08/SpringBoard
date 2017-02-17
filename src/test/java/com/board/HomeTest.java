@@ -6,25 +6,33 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.*;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.boot.test.WebIntegrationTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.*;
+import java.util.List;
+import java.util.Properties;
 
 import static org.junit.Assert.assertEquals;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = AppConfig.class)
+@WebIntegrationTest(randomPort = true)
 public class HomeTest {
+
+    @Value("${local.server.port}")
+    private int port;
+
     static WebDriver driver;
 
     static Properties pro;
@@ -46,8 +54,13 @@ public class HomeTest {
         username = pro.getProperty("spring.datasource.username");
         password = pro.getProperty("spring.datasource.password");
 
-        conn = DriverManager.getConnection(connectionURL, username, password);
-        stmt = conn.createStatement();
+        try {
+            conn = DriverManager.getConnection(connectionURL, username, password);
+            stmt = conn.createStatement();
+        }
+        catch (SQLException e) {
+            throw new SQLException("$DB가 연결 되지 않았습니다.$");
+        }
 
         Capabilities caps = new DesiredCapabilities();
         ((DesiredCapabilities) caps).setJavascriptEnabled(true);
@@ -70,15 +83,15 @@ public class HomeTest {
     @Test // Write 페이지로 이동할수 있는가
     public void moveToWriteTest() throws Exception {
         try {
-            String baseURL = "http://localhost:8080";
+            String baseURL = "http://localhost:" + port;
             driver.get(baseURL);
 
             driver.findElement(By.className("writeBtn")).click();
 
-            assertEquals("주소가 제대로 호출되지 않았습니다.", "http://localhost:8080/write", driver.getCurrentUrl());
+            assertEquals("$주소가 제대로 호출되지 않았습니다.$", "http://localhost:" + port + "/write", driver.getCurrentUrl());
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("html이 제대로 호출되지 않았습니다.");
+            throw new NoSuchElementException("$html이 제대로 호출되지 않았습니다.$");
         }
     }
 
@@ -89,15 +102,15 @@ public class HomeTest {
             query = "Insert Into post(id, nick ,subject, content, date, hit) VALUES (1, 'TEST1', 'TESTSUBJECT1', 'TESTCONTENT1', '2017/01/16', 1);";
             stmt.executeUpdate(query);
 
-            String baseURL = "http://localhost:8080";
+            String baseURL = "http://localhost:" + port;
             driver.get(baseURL);
 
             driver.findElement(By.className("subjectBtn")).click();
 
-            assertEquals("주소가 제대로 호출되지 않았습니다.", "http://localhost:8080/postview/1", driver.getCurrentUrl());
+            assertEquals("$주소가 제대로 호출되지 않았습니다.$", "http://localhost:" + port + "/postview/1", driver.getCurrentUrl());
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("html이 제대로 호출되지 않았습니다.");
+            throw new NoSuchElementException("$html이 제대로 호출되지 않았습니다.$");
         }
         finally {
             query = "TRUNCATE TABLE post;";
@@ -116,24 +129,24 @@ public class HomeTest {
             query = "Insert Into post(id, nick ,subject, content, date, hit) VALUES (2, 'TEST2', 'TESTSUBJECT2', 'TESTCONTENT2', '2017/01/17', 20);";
             stmt.executeUpdate(query);
 
-            String baseURL = "http://localhost:8080";
+            String baseURL = "http://localhost:" + port;
             driver.get(baseURL);
 
             List<WebElement> div = driver.findElements(By.className("postList"));
-            assertEquals("글쓰기가 제대로 되지 않았습니다.", 3, div.size());
+            assertEquals("", 3, div.size());
             WebElement td = driver.findElement(By.className("homeId"));
-            assertEquals("내림차순이 아니거나 글 번호가 제대로 등록되지 않았습니다.", "3", td.getText());
+            assertEquals("", "3", td.getText());
             td = driver.findElement(By.className("homeSubject"));
-            assertEquals("글 제목이 일치하지 않습니다.", "TESTSUBJECT3", td.getText());
+            assertEquals("$글 제목이 일치하지 않습니다.$", "TESTSUBJECT3", td.getText());
             td = driver.findElement(By.className("homeNick"));
-            assertEquals("글쓴이가 일치하지 않습니다.", "TEST3", td.getText());
+            assertEquals("$글쓴이가 일치하지 않습니다.$", "TEST3", td.getText());
             td = driver.findElement(By.className("homeDate"));
-            assertEquals("날짜가 일치하지 않습니다.", "2017/01/18", td.getText());
+            assertEquals("$날짜가 일치하지 않습니다.$", "2017/01/18", td.getText());
             td = driver.findElement(By.className("homeHit"));
-            assertEquals("조회수가 일치하지 않습니다.", "30", td.getText());
+            assertEquals("$조회수가 일치하지 않습니다.$", "30", td.getText());
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("html이 제대로 호출되지 않았습니다.");
+            throw new NoSuchElementException("$html이 제대로 호출되지 않았습니다.$");
         }
         finally {
             query = "TRUNCATE TABLE post;";
