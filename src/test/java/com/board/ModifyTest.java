@@ -122,7 +122,7 @@ public class ModifyTest {
             assertEquals("수정된 글 내용이 일치하지 않습니다.", "MODIFY_CONTENT", td.getText());
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("html이 제대로 호출되지 않았습니다.");
+            throw new NoSuchElementException("$html이 제대로 호출되지 않았습니다.$");
         }
         finally {
             query = "TRUNCATE TABLE post;";

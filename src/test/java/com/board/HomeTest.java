@@ -120,9 +120,9 @@ public class HomeTest {
             driver.get(baseURL);
 
             List<WebElement> div = driver.findElements(By.className("postList"));
-            assertEquals("", 3, div.size());
+            assertEquals("글쓰기가 제대로 되지 않았습니다.", 3, div.size());
             WebElement td = driver.findElement(By.className("homeId"));
-            assertEquals("", "3", td.getText());
+            assertEquals("내림차순이 아니거나 글 번호가 제대로 등록되지 않았습니다.", "3", td.getText());
             td = driver.findElement(By.className("homeSubject"));
             assertEquals("글 제목이 일치하지 않습니다.", "TESTSUBJECT3", td.getText());
             td = driver.findElement(By.className("homeNick"));
