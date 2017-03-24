@@ -20,8 +20,8 @@ public class HomeController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String board(Model model) {
-        List<Post> postList = postRepository.findAllByOrderByIdDesc();
-        model.addAttribute("posts", postList);
+        List<Post> posts = postRepository.findAllByOrderByIdDesc();
+        model.addAttribute("posts", posts);
 
         return "Home";
     }

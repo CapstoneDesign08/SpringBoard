@@ -82,7 +82,7 @@ public class WriteTest {
     }
 
     @Test // postview 페이지로 넘어갔을때 입력한 값이 제대로 들어갔는가
-    public void writePostViewTest() throws Exception {
+    public void checkPostViewTest() throws Exception {
         String query;
         try {
             String baseURL = "http://localhost:" + port + "/write";
@@ -113,8 +113,8 @@ public class WriteTest {
         }
     }
 
-    @Test // 작성중 뒤로가기 버튼이 제대로 작동하는가
-    public void writeBackTest() throws Exception {
+    @Test // 작성 중 뒤로가기 버튼이 제대로 작동하는가
+    public void backWriteTest() throws Exception {
         try {
             String baseURL = "http://localhost:" + port + "/write";
             driver.get(baseURL);
@@ -156,7 +156,7 @@ public class WriteTest {
     }
 
     @Test       // 값을 모두 입력하면 해당객체의 postview페이지로 넘어가는가
-    public void writePostTest() throws Exception {
+    public void writePostViewTest() throws Exception {
         String query;
         try {
             String baseURL = "http://localhost:" + port + "/write";

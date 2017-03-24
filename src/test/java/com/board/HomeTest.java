@@ -119,7 +119,7 @@ public class HomeTest {
     }
 
     @Test // post의 객체의 id, 제목, 닉네임, 해당조회수가 내림차순으로 적용되었나
-    public void homePostTest() throws Exception {
+    public void checkDescPostTest() throws Exception {
         String query;
         try {
             query = "Insert Into post(id, nick ,subject, content, date, hit) VALUES (1, 'TEST1', 'TESTSUBJECT1', 'TESTCONTENT1', '2017/01/16', 10);";

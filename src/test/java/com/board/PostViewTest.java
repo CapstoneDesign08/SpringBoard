@@ -83,7 +83,7 @@ public class PostViewTest {
 
 
     @Test // post객체 하나 클릭시 입력한 값이 제대로 들어가는가
-    public void postViewTest() throws Exception {
+    public void checkPostViewTest() throws Exception {
         String query;
         try {
             query = "Insert Into post(id, nick ,subject, content, date, hit) VALUES (2, 'TEST', 'TESTSUBJECT', 'TESTCONTENT', '2017/01/16', 20);";
@@ -115,7 +115,7 @@ public class PostViewTest {
     }
 
     @Test // postview로 들어오면 조회수가 제대로 적용되는가
-    public void postViewHitTest() throws Exception {
+    public void checkPostViewHitTest() throws Exception {
         String query;
         try {
             query = "Insert Into post(id, nick ,subject, content, date, hit) VALUES (2, 'TEST', 'TESTSUBJECT', 'TESTCONTENT', '2017/01/16', 20);";
@@ -143,7 +143,7 @@ public class PostViewTest {
     }
 
     @Test // 뒤로가기 버튼이 제대로 작동하는가
-    public void postViewBackTest() throws Exception {
+    public void backPostViewTest() throws Exception {
         String query;
         try {
             query = "Insert Into post(id, nick ,subject, content, date, hit) VALUES (2, 'TEST', 'TESTSUBJECT', 'TESTCONTENT', '2017/01/16', 2);";
