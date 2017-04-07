@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c6bf267-370b-4cfe-8965-c53c7c2298f1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+    <list default="true" id="9c6bf267-370b-4cfe-8965-c53c7c2298f1" name="Default" comment="board final">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/com/board/HomeTest.class" afterPath="$PROJECT_DIR$/build/classes/test/com/board/HomeTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/com/board/ModifyTest.class" afterPath="$PROJECT_DIR$/build/classes/test/com/board/ModifyTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/com/board/PostViewTest.class" afterPath="$PROJECT_DIR$/build/classes/test/com/board/PostViewTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/com/board/WriteTest.class" afterPath="$PROJECT_DIR$/build/classes/test/com/board/WriteTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/templates/Home.html" afterPath="$PROJECT_DIR$/build/resources/main/templates/Home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/templates/Modify.html" afterPath="$PROJECT_DIR$/build/resources/main/templates/Modify.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/templates/PostView.html" afterPath="$PROJECT_DIR$/build/resources/main/templates/PostView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/templates/Write.html" afterPath="$PROJECT_DIR$/build/resources/main/templates/Write.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phantomjsdriver.log" afterPath="$PROJECT_DIR$/phantomjsdriver.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/board/data/PostRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/board/data/PostRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/Home.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/Home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/Modify.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/Modify.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/PostView.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/PostView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/Write.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/Write.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/board/HomeTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/board/HomeTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/board/ModifyTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/board/ModifyTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/board/PostViewTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/board/PostViewTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/board/WriteTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/board/WriteTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -97,22 +92,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HomeTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HomeTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/board/HomeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="35" column="28" lean-forward="true" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+            <state relative-caret-position="760">
+              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding>
-                <marker date="1490352726905" expanded="true" signature="3584:3708" ph="Insert Into post... " />
-                <marker date="1490352726905" expanded="true" signature="4453:4578" ph="Insert Into post... " />
-                <marker date="1490352726905" expanded="true" signature="4642:4767" ph="Insert Into post... " />
-                <marker date="1490352726905" expanded="true" signature="4831:4956" ph="Insert Into post... " />
+                <marker date="1491556562966" expanded="true" signature="3619:3743" ph="Insert Into post... " />
+                <marker date="1491556562966" expanded="true" signature="4532:4657" ph="Insert Into post... " />
+                <marker date="1491556562966" expanded="true" signature="4721:4846" ph="Insert Into post... " />
+                <marker date="1491556562966" expanded="true" signature="4910:5035" ph="Insert Into post... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
@@ -125,8 +120,8 @@
       <file leaf-file-name="Modify.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Modify.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="45" column="7" lean-forward="true" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+            <state relative-caret-position="855">
+              <caret line="45" column="7" lean-forward="false" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#0;n#tr#2;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -137,8 +132,8 @@
       <file leaf-file-name="WriteTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/board/WriteTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="91" column="71" lean-forward="true" selection-start-line="91" selection-start-column="71" selection-end-line="91" selection-end-column="71" />
+            <state relative-caret-position="3325">
+              <caret line="199" column="5" lean-forward="false" selection-start-line="199" selection-start-column="5" selection-end-line="199" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -158,7 +153,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Home.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="228">
-              <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+              <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
               <folding>
                 <element signature="n#style#0;n#tr#0;n#thead#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -169,8 +164,8 @@
       <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/board/controller/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-79">
-              <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+            <state relative-caret-position="247">
+              <caret line="23" column="43" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -191,14 +186,17 @@
       <file leaf-file-name="ModifyTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/board/ModifyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="82" column="22" lean-forward="false" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
+            <state relative-caret-position="760">
+              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding>
-                <marker date="1490352512394" expanded="true" signature="3071:3192" ph="Insert Into post... " />
-                <marker date="1490352512394" expanded="true" signature="4226:4347" ph="Insert Into post... " />
-                <marker date="1490352512394" expanded="true" signature="5972:6093" ph="Insert Into post... " />
-                <marker date="1490352512394" expanded="true" signature="6859:6980" ph="Insert Into post... " />
-                <marker date="1490352512394" expanded="true" signature="7767:7888" ph="Insert Into post... " />
+                <element signature="imports" expanded="true" />
+                <element signature="e#9034#9035#0" expanded="true" />
+                <element signature="e#9063#9064#0" expanded="true" />
+                <marker date="1491556562857" expanded="true" signature="3073:3194" ph="Insert Into post... " />
+                <marker date="1491556562857" expanded="true" signature="4353:4474" ph="Insert Into post... " />
+                <marker date="1491556562857" expanded="true" signature="6250:6371" ph="Insert Into post... " />
+                <marker date="1491556562857" expanded="true" signature="7202:7323" ph="Insert Into post... " />
+                <marker date="1491556562857" expanded="true" signature="8185:8306" ph="Insert Into post... " />
               </folding>
             </state>
           </provider>
@@ -207,17 +205,14 @@
       <file leaf-file-name="PostViewTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/board/PostViewTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="741">
+              <caret line="62" column="56" lean-forward="false" selection-start-line="62" selection-start-column="56" selection-end-line="62" selection-end-column="56" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#8396#8397#0" expanded="false" />
-                <element signature="e#8425#8426#0" expanded="false" />
-                <marker date="1490352711376" expanded="true" signature="3082:3204" ph="Insert Into post... " />
-                <marker date="1490352711376" expanded="true" signature="4658:4780" ph="Insert Into post... " />
-                <marker date="1490352711376" expanded="true" signature="5717:5838" ph="Insert Into post... " />
-                <marker date="1490352711376" expanded="true" signature="6568:6689" ph="Insert Into post... " />
-                <marker date="1490352711376" expanded="true" signature="7641:7762" ph="Insert Into post... " />
+                <marker date="1491556562920" expanded="true" signature="3084:3206" ph="Insert Into post... " />
+                <marker date="1491556562920" expanded="true" signature="4764:4886" ph="Insert Into post... " />
+                <marker date="1491556562920" expanded="true" signature="5868:5989" ph="Insert Into post... " />
+                <marker date="1491556562920" expanded="true" signature="6767:6888" ph="Insert Into post... " />
+                <marker date="1491556562920" expanded="true" signature="7913:8034" ph="Insert Into post... " />
               </folding>
             </state>
           </provider>
@@ -586,17 +581,17 @@
         <option value="$PROJECT_DIR$/src/main/java/com/board/controller/PostViewController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/board/controller/ModifyController.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/board/TestSet.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/board/ModifyTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/board/WriteTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/board/PostViewTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/board/HomeTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/PostView.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/Home.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/Write.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/Modify.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/board/data/PostRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/board/controller/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/com/board/HomeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/board/ModifyTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/board/PostViewTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/board/WriteTest.java" />
       </list>
     </option>
   </component>
@@ -628,6 +623,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -653,140 +651,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringBoard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringBoard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="board" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringBoard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringBoard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringBoard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringBoard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="board" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringBoard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringBoard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="board" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringBoard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringBoard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="board" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -808,9 +672,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1238,7 +1099,10 @@
       <workItem from="1485798570340" duration="63000" />
       <workItem from="1485799140944" duration="1966000" />
       <workItem from="1490349704522" duration="3090000" />
-      <workItem from="1490788667721" duration="11312000" />
+      <workItem from="1490788667721" duration="12676000" />
+      <workItem from="1491554214728" duration="1497000" />
+      <workItem from="1491556723585" duration="51000" />
+      <workItem from="1491557013683" duration="61000" />
     </task>
     <task id="LOCAL-00001" summary="spring test">
       <created>1485234274486</created>
@@ -1268,16 +1132,24 @@
       <option name="project" value="LOCAL" />
       <updated>1490351416541</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="board final">
+      <created>1490950351953</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1490950351953</updated>
+    </task>
+    <task id="LOCAL-00006" summary="board final">
+      <created>1490950791526</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1490950791526</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_SpringBoard_test - 2017.01.31 at 04h 46m 00s.xml">
-      <configuration name="All in SpringBoard_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_SpringBoard_test - 2017.03.24 at 19h 29m 00s.xml">
-      <configuration name="All in SpringBoard_test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_SpringBoard_test - 2017.03.24 at 19h 48m 05s.xml">
       <configuration name="All in SpringBoard_test" configurationId="JUnit" />
     </history-entry>
@@ -1285,6 +1157,12 @@
       <configuration name="All in SpringBoard_test" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_SpringBoard_test - 2017.03.31 at 17h 34m 41s.xml">
+      <configuration name="All in SpringBoard_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_SpringBoard_test - 2017.04.07 at 17h 39m 45s.xml">
+      <configuration name="All in SpringBoard_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_SpringBoard_test - 2017.04.07 at 17h 41m 17s.xml">
       <configuration name="All in SpringBoard_test" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_SpringBoard_test_(1) - 2017.03.31 at 17h 19m 50s.xml">
@@ -1304,7 +1182,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49839000" />
+    <option name="totallyTimeSpent" value="52812000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1321,7 +1199,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.287062" sideWeight="0.5025707" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1332,15 +1210,15 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39892185" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32614556" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32614556" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.287062" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.287062" sideWeight="0.4974293" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1844473" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19473007" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1380,14 +1258,11 @@
         <state relative-caret-position="3439">
           <caret line="201" column="9" lean-forward="false" selection-start-line="201" selection-start-column="9" selection-end-line="201" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#8396#8397#0" expanded="false" />
-            <element signature="e#8425#8426#0" expanded="false" />
-            <marker date="1490352711376" expanded="true" signature="3082:3204" ph="Insert Into post... " />
-            <marker date="1490352711376" expanded="true" signature="4658:4780" ph="Insert Into post... " />
-            <marker date="1490352711376" expanded="true" signature="5717:5838" ph="Insert Into post... " />
-            <marker date="1490352711376" expanded="true" signature="6568:6689" ph="Insert Into post... " />
-            <marker date="1490352711376" expanded="true" signature="7641:7762" ph="Insert Into post... " />
+            <marker date="1491556562920" expanded="true" signature="3084:3206" ph="Insert Into post... " />
+            <marker date="1491556562920" expanded="true" signature="4764:4886" ph="Insert Into post... " />
+            <marker date="1491556562920" expanded="true" signature="5868:5989" ph="Insert Into post... " />
+            <marker date="1491556562920" expanded="true" signature="6767:6888" ph="Insert Into post... " />
+            <marker date="1491556562920" expanded="true" signature="7913:8034" ph="Insert Into post... " />
           </folding>
         </state>
       </provider>
@@ -1407,10 +1282,10 @@
         <state relative-caret-position="2394">
           <caret line="126" column="45" lean-forward="false" selection-start-line="126" selection-start-column="25" selection-end-line="126" selection-end-column="45" />
           <folding>
-            <marker date="1490352726905" expanded="true" signature="3584:3708" ph="Insert Into post... " />
-            <marker date="1490352726905" expanded="true" signature="4453:4578" ph="Insert Into post... " />
-            <marker date="1490352726905" expanded="true" signature="4642:4767" ph="Insert Into post... " />
-            <marker date="1490352726905" expanded="true" signature="4831:4956" ph="Insert Into post... " />
+            <marker date="1491556562966" expanded="true" signature="3619:3743" ph="Insert Into post... " />
+            <marker date="1491556562966" expanded="true" signature="4532:4657" ph="Insert Into post... " />
+            <marker date="1491556562966" expanded="true" signature="4721:4846" ph="Insert Into post... " />
+            <marker date="1491556562966" expanded="true" signature="4910:5035" ph="Insert Into post... " />
           </folding>
         </state>
       </provider>
@@ -1473,14 +1348,11 @@
         <state relative-caret-position="3439">
           <caret line="201" column="9" lean-forward="true" selection-start-line="201" selection-start-column="9" selection-end-line="201" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#8396#8397#0" expanded="false" />
-            <element signature="e#8425#8426#0" expanded="false" />
-            <marker date="1490352711376" expanded="true" signature="3082:3204" ph="Insert Into post... " />
-            <marker date="1490352711376" expanded="true" signature="4658:4780" ph="Insert Into post... " />
-            <marker date="1490352711376" expanded="true" signature="5717:5838" ph="Insert Into post... " />
-            <marker date="1490352711376" expanded="true" signature="6568:6689" ph="Insert Into post... " />
-            <marker date="1490352711376" expanded="true" signature="7641:7762" ph="Insert Into post... " />
+            <marker date="1491556562920" expanded="true" signature="3084:3206" ph="Insert Into post... " />
+            <marker date="1491556562920" expanded="true" signature="4764:4886" ph="Insert Into post... " />
+            <marker date="1491556562920" expanded="true" signature="5868:5989" ph="Insert Into post... " />
+            <marker date="1491556562920" expanded="true" signature="6767:6888" ph="Insert Into post... " />
+            <marker date="1491556562920" expanded="true" signature="7913:8034" ph="Insert Into post... " />
           </folding>
         </state>
       </provider>
@@ -1500,10 +1372,10 @@
         <state relative-caret-position="2318">
           <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
           <folding>
-            <marker date="1490352726905" expanded="true" signature="3584:3708" ph="Insert Into post... " />
-            <marker date="1490352726905" expanded="true" signature="4453:4578" ph="Insert Into post... " />
-            <marker date="1490352726905" expanded="true" signature="4642:4767" ph="Insert Into post... " />
-            <marker date="1490352726905" expanded="true" signature="4831:4956" ph="Insert Into post... " />
+            <marker date="1491556562966" expanded="true" signature="3619:3743" ph="Insert Into post... " />
+            <marker date="1491556562966" expanded="true" signature="4532:4657" ph="Insert Into post... " />
+            <marker date="1491556562966" expanded="true" signature="4721:4846" ph="Insert Into post... " />
+            <marker date="1491556562966" expanded="true" signature="4910:5035" ph="Insert Into post... " />
           </folding>
         </state>
       </provider>
@@ -1566,14 +1438,11 @@
         <state relative-caret-position="3363">
           <caret line="197" column="48" lean-forward="false" selection-start-line="197" selection-start-column="48" selection-end-line="197" selection-end-column="48" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#8396#8397#0" expanded="false" />
-            <element signature="e#8425#8426#0" expanded="false" />
-            <marker date="1490352711376" expanded="true" signature="3082:3204" ph="Insert Into post... " />
-            <marker date="1490352711376" expanded="true" signature="4658:4780" ph="Insert Into post... " />
-            <marker date="1490352711376" expanded="true" signature="5717:5838" ph="Insert Into post... " />
-            <marker date="1490352711376" expanded="true" signature="6568:6689" ph="Insert Into post... " />
-            <marker date="1490352711376" expanded="true" signature="7641:7762" ph="Insert Into post... " />
+            <marker date="1491556562920" expanded="true" signature="3084:3206" ph="Insert Into post... " />
+            <marker date="1491556562920" expanded="true" signature="4764:4886" ph="Insert Into post... " />
+            <marker date="1491556562920" expanded="true" signature="5868:5989" ph="Insert Into post... " />
+            <marker date="1491556562920" expanded="true" signature="6767:6888" ph="Insert Into post... " />
+            <marker date="1491556562920" expanded="true" signature="7913:8034" ph="Insert Into post... " />
           </folding>
         </state>
       </provider>
@@ -1600,10 +1469,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1490352726905" expanded="true" signature="3584:3708" ph="Insert Into post... " />
-            <marker date="1490352726905" expanded="true" signature="4453:4578" ph="Insert Into post... " />
-            <marker date="1490352726905" expanded="true" signature="4642:4767" ph="Insert Into post... " />
-            <marker date="1490352726905" expanded="true" signature="4831:4956" ph="Insert Into post... " />
+            <marker date="1491556562966" expanded="true" signature="3619:3743" ph="Insert Into post... " />
+            <marker date="1491556562966" expanded="true" signature="4532:4657" ph="Insert Into post... " />
+            <marker date="1491556562966" expanded="true" signature="4721:4846" ph="Insert Into post... " />
+            <marker date="1491556562966" expanded="true" signature="4910:5035" ph="Insert Into post... " />
           </folding>
         </state>
       </provider>
@@ -1649,14 +1518,11 @@
         <state relative-caret-position="1520">
           <caret line="103" column="32" lean-forward="false" selection-start-line="103" selection-start-column="32" selection-end-line="103" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#8396#8397#0" expanded="false" />
-            <element signature="e#8425#8426#0" expanded="false" />
-            <marker date="1490352711376" expanded="true" signature="3082:3204" ph="Insert Into post... " />
-            <marker date="1490352711376" expanded="true" signature="4658:4780" ph="Insert Into post... " />
-            <marker date="1490352711376" expanded="true" signature="5717:5838" ph="Insert Into post... " />
-            <marker date="1490352711376" expanded="true" signature="6568:6689" ph="Insert Into post... " />
-            <marker date="1490352711376" expanded="true" signature="7641:7762" ph="Insert Into post... " />
+            <marker date="1491556562920" expanded="true" signature="3084:3206" ph="Insert Into post... " />
+            <marker date="1491556562920" expanded="true" signature="4764:4886" ph="Insert Into post... " />
+            <marker date="1491556562920" expanded="true" signature="5868:5989" ph="Insert Into post... " />
+            <marker date="1491556562920" expanded="true" signature="6767:6888" ph="Insert Into post... " />
+            <marker date="1491556562920" expanded="true" signature="7913:8034" ph="Insert Into post... " />
           </folding>
         </state>
       </provider>
@@ -1686,9 +1552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1703,7 +1566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1711,34 +1573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="30" column="16" lean-forward="false" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-          <folding>
-            <element signature="e#506#507#0" expanded="false" />
-            <element signature="e#534#535#0" expanded="false" />
-            <element signature="e#792#793#0" expanded="false" />
-            <element signature="e#817#818#0" expanded="false" />
-            <element signature="e#850#851#0" expanded="false" />
-            <element signature="e#878#879#0" expanded="false" />
-            <element signature="e#909#910#0" expanded="false" />
-            <element signature="e#936#937#0" expanded="false" />
-            <element signature="e#976#977#0" expanded="false" />
-            <element signature="e#1008#1009#0" expanded="false" />
-            <element signature="e#1042#1043#0" expanded="false" />
-            <element signature="e#1072#1073#0" expanded="false" />
-            <element signature="e#1118#1119#0" expanded="false" />
-            <element signature="e#1156#1157#0" expanded="false" />
-            <element signature="e#1190#1191#0" expanded="false" />
-            <element signature="e#1220#1221#0" expanded="false" />
-            <element signature="e#1266#1267#0" expanded="false" />
-            <element signature="e#1304#1305#0" expanded="false" />
-            <element signature="e#1335#1336#0" expanded="false" />
-            <element signature="e#1362#1363#0" expanded="false" />
-            <element signature="e#1402#1403#0" expanded="false" />
-            <element signature="e#1434#1435#0" expanded="false" />
-            <element signature="e#1461#1462#0" expanded="false" />
-            <element signature="e#1487#1488#0" expanded="false" />
-            <element signature="e#1522#1523#0" expanded="false" />
-            <element signature="e#1552#1553#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1747,12 +1581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="50" selection-end-column="12" />
-          <folding>
-            <element signature="n#style#0;n#tr#0;n#thead#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#3;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1760,9 +1588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
           <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#tr#2;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1770,45 +1595,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/board/PostViewTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#8396#8397#0" expanded="false" />
-            <element signature="e#8425#8426#0" expanded="false" />
-            <marker date="1490352711376" expanded="true" signature="3082:3204" ph="Insert Into post... " />
-            <marker date="1490352711376" expanded="true" signature="4658:4780" ph="Insert Into post... " />
-            <marker date="1490352711376" expanded="true" signature="5717:5838" ph="Insert Into post... " />
-            <marker date="1490352711376" expanded="true" signature="6568:6689" ph="Insert Into post... " />
-            <marker date="1490352711376" expanded="true" signature="7641:7762" ph="Insert Into post... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/board/ModifyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="82" column="22" lean-forward="false" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
-          <folding>
-            <marker date="1490352512394" expanded="true" signature="3071:3192" ph="Insert Into post... " />
-            <marker date="1490352512394" expanded="true" signature="4226:4347" ph="Insert Into post... " />
-            <marker date="1490352512394" expanded="true" signature="5972:6093" ph="Insert Into post... " />
-            <marker date="1490352512394" expanded="true" signature="6859:6980" ph="Insert Into post... " />
-            <marker date="1490352512394" expanded="true" signature="7767:7888" ph="Insert Into post... " />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Modify.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="45" column="7" lean-forward="true" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+        <state relative-caret-position="855">
+          <caret line="45" column="7" lean-forward="false" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#input#0;n#div#0;n#tr#2;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -1818,7 +1611,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
-          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
           <folding>
             <element signature="n#style#0;n#tr#0;n#thead#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -1833,14 +1626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/board/AppConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -1851,32 +1636,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/board/controller/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-79">
-          <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+        <state relative-caret-position="247">
+          <caret line="23" column="43" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/board/ModifyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#9034#9035#0" expanded="true" />
+            <element signature="e#9063#9064#0" expanded="true" />
+            <marker date="1491556562857" expanded="true" signature="3073:3194" ph="Insert Into post... " />
+            <marker date="1491556562857" expanded="true" signature="4353:4474" ph="Insert Into post... " />
+            <marker date="1491556562857" expanded="true" signature="6250:6371" ph="Insert Into post... " />
+            <marker date="1491556562857" expanded="true" signature="7202:7323" ph="Insert Into post... " />
+            <marker date="1491556562857" expanded="true" signature="8185:8306" ph="Insert Into post... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/board/PostViewTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="62" column="56" lean-forward="false" selection-start-line="62" selection-start-column="56" selection-end-line="62" selection-end-column="56" />
+          <folding>
+            <marker date="1491556562920" expanded="true" signature="3084:3206" ph="Insert Into post... " />
+            <marker date="1491556562920" expanded="true" signature="4764:4886" ph="Insert Into post... " />
+            <marker date="1491556562920" expanded="true" signature="5868:5989" ph="Insert Into post... " />
+            <marker date="1491556562920" expanded="true" signature="6767:6888" ph="Insert Into post... " />
+            <marker date="1491556562920" expanded="true" signature="7913:8034" ph="Insert Into post... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/board/WriteTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="91" column="71" lean-forward="true" selection-start-line="91" selection-start-column="71" selection-end-line="91" selection-end-column="71" />
+        <state relative-caret-position="3325">
+          <caret line="199" column="5" lean-forward="false" selection-start-line="199" selection-start-column="5" selection-end-line="199" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/board/HomeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="35" column="28" lean-forward="true" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+        <state relative-caret-position="760">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding>
-            <marker date="1490352726905" expanded="true" signature="3584:3708" ph="Insert Into post... " />
-            <marker date="1490352726905" expanded="true" signature="4453:4578" ph="Insert Into post... " />
-            <marker date="1490352726905" expanded="true" signature="4642:4767" ph="Insert Into post... " />
-            <marker date="1490352726905" expanded="true" signature="4831:4956" ph="Insert Into post... " />
+            <marker date="1491556562966" expanded="true" signature="3619:3743" ph="Insert Into post... " />
+            <marker date="1491556562966" expanded="true" signature="4532:4657" ph="Insert Into post... " />
+            <marker date="1491556562966" expanded="true" signature="4721:4846" ph="Insert Into post... " />
+            <marker date="1491556562966" expanded="true" signature="4910:5035" ph="Insert Into post... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -60,7 +60,7 @@ public class WriteTest {
             stmt = conn.createStatement();
         }
         catch (SQLException e) {
-            throw new SQLException("$DB가 연결 되지 않았습니다.$");
+            throw new SQLException("$DB가 연결 되지 않았습니다.\n#");
         }
 
         Capabilities caps = new DesiredCapabilities();
@@ -94,18 +94,18 @@ public class WriteTest {
             driver.findElement(By.tagName("form")).submit();
 
             WebElement td = driver.findElement(By.className("postViewId"));
-            assertEquals("$글 번호가 제대로 넘어가지 않았습니다.$", "1", td.getText());
+            assertEquals("$게시물 작성후 주소'/postview/{id}'로 이동시 게시물의 번호가 제대로 적용되지 않았습니다.\n#", "1", td.getText());
             td = driver.findElement(By.className("postViewNick"));
-            assertEquals("$닉네임이 제대로 넘어가지 않았습니다.$", "NICK", td.getText());
+            assertEquals("$게시물 작성후 주소'/postview/{id}'로 이동시 게시물의 닉네임가 제대로 적용되지 않았습니다.\n#", "NICK", td.getText());
             td = driver.findElement(By.className("postViewHit"));
-            assertEquals("$조회수의 초기 값을 1로 해주세요.$", "1", td.getText());
+            assertEquals("$게시물 작성후 주소'/postview/{id}'로 이동시 게시물의 조회수가 1로 제대로 초기화되지 않았습니다.\n#", "1", td.getText());
             td = driver.findElement(By.className("postViewSubject"));
-            assertEquals("$글 제목이 제대로 넘어가지 않았습니다.$", "SUBJECT", td.getText());
+            assertEquals("$게시물 작성후 주소'/postview/{id}'로 이동시 게시물의 제목이 제대로 적용되지 않았습니다.\n#", "SUBJECT", td.getText());
             td = driver.findElement(By.className("postViewContent"));
-            assertEquals("$글 내용이 제대로 넘어가지 않았습니다.$", "CONTENT", td.getText());
+            assertEquals("$게시물 작성후 주소'/postview/{id}'로 이동시 게시물의 내용이 제대로 적용되지 않았습니다.\n#", "CONTENT", td.getText());
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("$html이 제대로 호출되지 않았습니다.$");
+            throw new NoSuchElementException("$Write.html이 제대로 호출되지 않았습니다.\n#");
         }
         finally {
             query = "TRUNCATE TABLE post;";
@@ -121,10 +121,10 @@ public class WriteTest {
 
             driver.findElement(By.className("back")).click();
 
-            assertEquals("$주소가 제대로 호출되지 않았습니다.$", "http://localhost:" + port + "/", driver.getCurrentUrl());
+            assertEquals("$주소 '/write'에서 주소'/'로의 뒤로가기 버튼이 제대로 수행되지 않았습니다.\n#", "http://localhost:" + port + "/", driver.getCurrentUrl());
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("$html이 제대로 호출되지 않았습니다.$");
+            throw new NoSuchElementException("$Write.html이 제대로 호출되지 않았습니다.\n#");
         }
     }
 
@@ -144,10 +144,10 @@ public class WriteTest {
             SimpleDateFormat today = new SimpleDateFormat("yyyy/MM/dd");
 
             WebElement td = driver.findElement(By.className("postViewDate"));
-            assertEquals("$등록 날짜가 다릅니다.$", today.format(d), td.getText());
+            assertEquals("$게시물 작성시 날짜가 현재 시스템 날짜로 설정되지 않았습니다.\n#", today.format(d), td.getText());
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("$html이 제대로 호출되지 않았습니다.$");
+            throw new NoSuchElementException("$Write.html이 제대로 호출되지 않았습니다.\n#");
         }
         finally {
             query = "TRUNCATE TABLE post;";
@@ -167,10 +167,10 @@ public class WriteTest {
             driver.findElement(By.name("content")).sendKeys("CONTENT");
             driver.findElement(By.tagName("form")).submit();
 
-            assertEquals("$주소가 제대로 호출되지 않았습니다.$", "http://localhost:" + port + "/postview/1", driver.getCurrentUrl());
+            assertEquals("$주소'/write'에서 값을 모두 입력하고 작성시 주소'/postview/{id}'로의 이동이 제대로 수행되지 않았습니다.\n#", "http://localhost:" + port + "/postview/1", driver.getCurrentUrl());
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("$html이 제대로 호출되지 않았습니다.$");
+            throw new NoSuchElementException("$Write.html이 제대로 호출되지 않았습니다.\n#");
         }
         finally {
             query = "TRUNCATE TABLE post;";
@@ -188,10 +188,10 @@ public class WriteTest {
             driver.findElement(By.name("nick")).clear();
             driver.findElement(By.tagName("form")).submit();
 
-            assertEquals("$에러페이지가 제대로 호출되지 않았습니다.$", "Error", driver.getTitle());
+            assertEquals("$주소 '/write'에서 게시물의 닉네임에 공백이 들어간채로 작성시 'ErrorPage.html'이 제대로 호출되지 않았습니다.\n#", "Error", driver.getTitle());
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("$html이 제대로 호출되지 않았습니다.$");
+            throw new NoSuchElementException("$Write.html이 제대로 호출되지 않았습니다.\n#");
         }
         finally {
             query = "TRUNCATE TABLE post;";
@@ -209,10 +209,10 @@ public class WriteTest {
             driver.findElement(By.name("subject")).clear();
             driver.findElement(By.tagName("form")).submit();
 
-            assertEquals("$에러페이지가 제대로 호출되지 않았습니다.$", "Error", driver.getTitle());
+            assertEquals("$주소 '/write'에서 게시물의 제목에 공백이 들어간채로 작성시 'ErrorPage.html'이 제대로 호출되지 않았습니다.\n#", "Error", driver.getTitle());
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("$html이 제대로 호출되지 않았습니다.$");
+            throw new NoSuchElementException("$Write.html이 제대로 호출되지 않았습니다.\n#");
         }
         finally {
             query = "TRUNCATE TABLE post;";

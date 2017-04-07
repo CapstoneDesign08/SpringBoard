@@ -60,7 +60,7 @@ public class PostViewTest {
             stmt = conn.createStatement();
         }
         catch (SQLException e) {
-            throw new SQLException("$DB가 연결 되지 않았습니다.$");
+            throw new SQLException("$DB가 연결 되지 않았습니다.\n#");
         }
 
         Capabilities caps = new DesiredCapabilities();
@@ -93,20 +93,19 @@ public class PostViewTest {
             driver.get(baseURL);
 
             WebElement td = driver.findElement(By.className("postViewId"));
-            assertEquals("$글 번호가 제대로 반영되지 않았습니다.$", "2", td.getText());
+            assertEquals("$주소 '/'에서 게시물의 제목 클릭시 주소 '/postview/{id}'에서 게시물의 번호가 제대로 반영되지 않았습니다.\n#", "2", td.getText());
             td = driver.findElement(By.className("postViewNick"));
-            assertEquals("$닉네임이 제대로 반영되지 않았습니다.$", "TEST", td.getText());
+            assertEquals("$주소 '/'에서 게시물의 제목 클릭시 주소 '/postview/{id}'에서 게시물의 닉네임이 제대로 반영되지 않았습니다.\n#", "TEST", td.getText());
             td = driver.findElement(By.className("postViewContent"));
-            assertEquals("$글 번호가 제대로 반영되지 않았습니다.$", "TESTCONTENT", td.getText());
+            assertEquals("$주소 '/'에서 게시물의 제목 클릭시 주소 '/postview/{id}'에서 게시물의 내용이 제대로 반영되지 않았습니다.\n#", "TESTCONTENT", td.getText());
             td = driver.findElement(By.className("postViewDate"));
-            assertEquals("$날짜가 제대로 반영되지 않았습니다.$", "2017/01/16", td.getText());
+            assertEquals("$주소 '/'에서 게시물의 제목 클릭시 주소 '/postview/{id}'에서 게시물의 날짜가 제대로 반영되지 않았습니다.\n#", "2017/01/16", td.getText());
             td = driver.findElement(By.className("postViewSubject"));
-            assertEquals("$글 제목이 제대로 반영되지 않았습니다.$", "TESTSUBJECT", td.getText());
-            td = driver.findElement(By.className("postViewContent"));
-            assertEquals("$글 내용이 제대로 반영되지 않았습니다.$", "TESTCONTENT", td.getText());
+            assertEquals("$주소 '/'에서 게시물의 제목 클릭시 주소 '/postview/{id}'에서 게시물의 제목이 제대로 반영되지 않았습니다.\n#", "TESTSUBJECT", td.getText());
+
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("$html이 제대로 호출되지 않았습니다.$");
+            throw new NoSuchElementException("$PostView.html이 제대로 호출되지 않았습니다.\n#");
         }
         finally {
             query = "TRUNCATE TABLE post;";
@@ -131,10 +130,10 @@ public class PostViewTest {
             driver.get(baseURL);
 
             td = driver.findElement(By.className("postViewHit"));
-            assertEquals("$조회수가 제대로 적용되지 않았습니다.$", Integer.toString(expected_hit), td.getText());
+            assertEquals("$주소 '/postview/{id}'로 이동시 게시물의 조회수 증가 제대로 수행되지 않았습니다.\n#", Integer.toString(expected_hit), td.getText());
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("$html이 제대로 호출되지 않았습니다.$");
+            throw new NoSuchElementException("$PostView.html이 제대로 호출되지 않았습니다.\n#");
         }
         finally {
             query = "TRUNCATE TABLE post;";
@@ -154,10 +153,10 @@ public class PostViewTest {
 
             driver.findElement(By.className("back")).click();
 
-            assertEquals("$주소가 제대로 호출되지 않았습니다.$", "http://localhost:" + port + "/", driver.getCurrentUrl());
+            assertEquals("$주소 '/postview/{id}'에서 주소 '/'로 뒤로가기 버튼이 제대로 수행되지 않았습니다.\n#", "http://localhost:" + port + "/", driver.getCurrentUrl());
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("$html이 제대로 호출되지 않았습니다.$");
+            throw new NoSuchElementException("$PostView.html이 제대로 호출되지 않았습니다.\n#");
         }
         finally {
             query = "TRUNCATE TABLE post;";
@@ -184,10 +183,10 @@ public class PostViewTest {
             driver.findElement(By.className("del")).click();
 
             div = driver.findElements(By.cssSelector("div.postList"));
-            assertEquals(expected_size, div.size());
+            assertEquals("$주소 '/postview/{id}'에서 삭제 버튼 클릭시 게시물 삭제가 제대로 수행되지 않았습니다.\n#",expected_size, div.size());
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("$html이 제대로 호출되지 않았습니다.$");
+            throw new NoSuchElementException("$PostView.html이 제대로 호출되지 않았습니다.\n#");
         }
         finally {
             query = "TRUNCATE TABLE post;";
@@ -207,10 +206,10 @@ public class PostViewTest {
 
             driver.findElement(By.className("modify")).click();
 
-            assertEquals("$주소가 제대로 호출되지 않았습니다.$", "http://localhost:" + port + "/postview/modify/2", driver.getCurrentUrl());
+            assertEquals("$주소 '/postview/{id}'에서 주소 '/postview/modify/{id}'로의 이동이 제대로 수행되지 않았습니다.\n#", "http://localhost:" + port + "/postview/modify/2", driver.getCurrentUrl());
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("$html이 제대로 호출되지 않았습니다.$");
+            throw new NoSuchElementException("$PostView.html이 제대로 호출되지 않았습니다.\n#");
         }
         finally {
             query = "TRUNCATE TABLE post;";

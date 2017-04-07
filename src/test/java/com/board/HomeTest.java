@@ -59,7 +59,7 @@ public class HomeTest {
             stmt = conn.createStatement();
         }
         catch (SQLException e) {
-            throw new SQLException("$DB가 연결 되지 않았습니다.$");
+            throw new SQLException("$DB가 연결 되지 않았습니다.\n#");
         }
 
         Capabilities caps = new DesiredCapabilities();
@@ -88,10 +88,10 @@ public class HomeTest {
 
             driver.findElement(By.className("writeBtn")).click();
 
-            assertEquals("$주소가 제대로 호출되지 않았습니다.$", "http://localhost:" + port + "/write", driver.getCurrentUrl());
+            assertEquals("$주소 '/'에서 주소 '/write'로의 이동이 제대로 수행되지 않았습니다.\n#", "http://localhost:" + port + "/write", driver.getCurrentUrl());
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("$html이 제대로 호출되지 않았습니다.$");
+            throw new NoSuchElementException("$Write.html이 제대로 호출되지 않았습니다.\n#");
         }
     }
 
@@ -107,10 +107,10 @@ public class HomeTest {
 
             driver.findElement(By.className("subjectBtn")).click();
 
-            assertEquals("$주소가 제대로 호출되지 않았습니다.$", "http://localhost:" + port + "/postview/1", driver.getCurrentUrl());
+            assertEquals("$주소 '/'에서 주소 '/postview/{id}'로의 이동이 제대로 수행되지 않았습니다.\n#", "http://localhost:" + port + "/postview/1", driver.getCurrentUrl());
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("$html이 제대로 호출되지 않았습니다.$");
+            throw new NoSuchElementException("$PostView.html이 제대로 호출되지 않았습니다.\n#");
         }
         finally {
             query = "TRUNCATE TABLE post;";
@@ -137,16 +137,16 @@ public class HomeTest {
             WebElement td = driver.findElement(By.className("homeId"));
             assertEquals("", "3", td.getText());
             td = driver.findElement(By.className("homeSubject"));
-            assertEquals("$글 제목이 일치하지 않습니다.$", "TESTSUBJECT3", td.getText());
+            assertEquals("$게시물의 제목이 제대로 적용되지 않았습니다.\n#", "TESTSUBJECT3", td.getText());
             td = driver.findElement(By.className("homeNick"));
-            assertEquals("$글쓴이가 일치하지 않습니다.$", "TEST3", td.getText());
+            assertEquals("$게시물의 글쓴이가 제대로 적용되지 않았습니다.\n#", "TEST3", td.getText());
             td = driver.findElement(By.className("homeDate"));
-            assertEquals("$날짜가 일치하지 않습니다.$", "2017/01/18", td.getText());
+            assertEquals("$게시물의 날짜가 제대로 적용되지 않았습니다.\n#", "2017/01/18", td.getText());
             td = driver.findElement(By.className("homeHit"));
-            assertEquals("$조회수가 일치하지 않습니다.$", "30", td.getText());
+            assertEquals("$게시물의 조회수가 제대로 적용되지 않았습니다.\n#", "30", td.getText());
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("$html이 제대로 호출되지 않았습니다.$");
+            throw new NoSuchElementException("$Home.html이 제대로 호출되지 않았습니다.\n#");
         }
         finally {
             query = "TRUNCATE TABLE post;";
